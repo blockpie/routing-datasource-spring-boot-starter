@@ -1,4 +1,6 @@
-## Introduction 简介
+## routing-datasource-spring-boot-starter
+
+### Introduction 简介
 
 - Routing datasource for Spring Boot
 - 结合 SpringBoot 使用的路由数据源
@@ -12,9 +14,9 @@
 - 从库随机或均衡切换
 
 
-## How to use 使用方法
+### How to use 使用方法
 
-1. Import maven dependency (引入 maven 依赖)
+**1. Import maven dependency (引入 maven 依赖)**
 
 ```xml
 <dependency>
@@ -27,7 +29,7 @@
 
 > 注意: 请修改 ${latest.release.version} 为实际版本
 
-2. Configure rule configuration (配置数据源)
+**2. Configure rule configuration (配置数据源)**
 ```yaml
 routing-datasource:
   data-source-map:
@@ -36,17 +38,17 @@ routing-datasource:
       strategy: random
       list:
         - driver-class-name: com.mysql.cj.jdbc.Driver
-          url: jdbc:mysql://127.0.0.1:3306/test1_master?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+          url: jdbc:mysql://127.0.0.1:3306/test1_master
           username: root
           password: pass
           type: com.alibaba.druid.pool.DruidDataSource
         - driver-class-name: com.mysql.cj.jdbc.Driver
-          url: jdbc:mysql://127.0.0.1:3306/test1_slave1?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+          url: jdbc:mysql://127.0.0.1:3306/test1_slave1
           username: root
           password: pass
           type: com.zaxxer.hikari.HikariDataSource
         - driver-class-name: com.mysql.cj.jdbc.Driver
-          url: jdbc:mysql://127.0.0.1:3306/test1_slave2?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+          url: jdbc:mysql://127.0.0.1:3306/test1_slave2
           username: root
           password: pass
     test2:
@@ -54,7 +56,7 @@ routing-datasource:
       strategy: balance
       list:
         - driver-class-name: com.mysql.cj.jdbc.Driver
-          url: jdbc:mysql://127.0.0.1:3306/test2?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+          url: jdbc:mysql://127.0.0.1:3306/test2
           username: root
           password: pass
 ```
