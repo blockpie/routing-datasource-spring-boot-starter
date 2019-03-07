@@ -2,17 +2,9 @@
 
 ### Introduction 简介
 
-- Routing datasource for Spring Boot
-- 结合 SpringBoot 使用的路由数据源
-
-
-- Master-slave splitting
-- 主从分离
-
-
-- Switching slave datasource random or balanced
-- 从库随机或均衡切换
-
+- Routing datasource for Spring Boot 结合 SpringBoot 使用的路由数据源
+- Master-slave splitting 主从分离
+- Switching slave datasource random or balanced 从库随机或均衡切换
 
 ### How to use 使用方法
 
