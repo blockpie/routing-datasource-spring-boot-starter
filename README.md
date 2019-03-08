@@ -1,5 +1,9 @@
 ## routing-datasource-spring-boot-starter
 
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.blockpie/routing-datasource-spring-boot-starter/badge.svg)](https://search.maven.org/artifact/com.blockpie/routing-datasource-spring-boot-starter/)
+[![GitHub release](https://img.shields.io/github/release/blockpie/routing-datasource-spring-boot-starter.svg)](https://github.com/blockpie/routing-datasource-spring-boot-starter/releases)
+[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+
 ### Introduction 简介
 
 - Routing datasource for Spring Boot 结合 SpringBoot 使用的路由数据源
